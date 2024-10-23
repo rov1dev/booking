@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Date from "./Date";
 import Guests from "./Guests";
 import "./Hero.css";
@@ -15,9 +16,11 @@ const Hero = () => {
               <Location />
               <Date />
               <Guests />
-              <div className="search-button">
-                <button>Search</button>
-              </div>
+              <Link to='/hotels'>
+                <div className="search-button">
+                  <button>Search</button>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

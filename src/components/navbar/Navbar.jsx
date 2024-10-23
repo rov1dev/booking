@@ -1,18 +1,23 @@
 import { BiSolidPlaneAlt } from "react-icons/bi";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-container">
-        <div className="navbar-logo">
-            <BiSolidPlaneAlt/>
+        <Link to='/'>
+          <div className="navbar-logo">
+            <BiSolidPlaneAlt />
             <span>Rise of Coding</span>
-        </div>
+          </div>
+        </Link>
 
-        <div>
+        <Link to="hotels">
+          <div>
             <button className="navbar-button">Book now</button>
-        </div>
+          </div>
+        </Link>
       </div>
     </div>
   );
