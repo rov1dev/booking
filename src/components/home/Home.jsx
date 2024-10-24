@@ -5,7 +5,6 @@ import Destinations from '../destinations/Destinations'
 import BestHotels from '../hotels/BestHotels'
 import Services from '../services/Services'
 import Newsletter from '../newsletter/Newsletter'
-import Footer from '../footer/Footer'
 
 const Home = () => {
   return (
@@ -17,7 +16,6 @@ const Home = () => {
             <BestHotels/>
             <Services/>
             <Newsletter/>
-            <Footer/>
         </div>
     </div>
   )
